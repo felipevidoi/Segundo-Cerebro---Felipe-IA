@@ -1,0 +1,29 @@
+# Credenciais e ambiente
+.env
+.env.*
+!.env.example
+.secrets/
+secrets/
+*.pem
+*.key
+
+# Artefatos de sistema e editores
+.DS_Store
+__pycache__/
+*.pyc
+Thumbs.db
+.idea/
+.vscode/
+
+# As cópias em .agents/skills e .claude/skills são geradas, mas permanecem no
+# pacote e no repositório para que os atalhos funcionem na primeira abertura.
+# Skills do produto: skills/os/. Skills do usuário: skills/minhas/. Rode o sincronizador depois de criar ou editar.
+
+# Saídas de build
+dist/*.zip
+dist/*.sha256
+
+# Dados locais do usuário (ex.: banco de faturas do exercício 2) e cópias de atualização
+dados/
+entrada/
+_arquivo/
